@@ -56,6 +56,42 @@ export default function Home() {
 
       <section style={{padding:'80px 20px'}}>
         <h2 style={{textAlign:'center',fontSize:'42px'}}>خدماتنا</h2>
+              <section style={{padding:'80px 20px',background:'#000'}}>
+  <h2 style={{textAlign:'center',fontSize:'42px',marginBottom:'40px'}}>
+    معرض الأعمال
+  </h2>
+
+  <div style={{
+    display:'grid',
+    gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',
+    gap:'20px'
+  }}>
+
+```
+{[
+  'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200',
+  'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200',
+  'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1200',
+  'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200',
+  'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200',
+  'https://images.unsplash.com/photo-1507504031003-b417219a0fde?q=80&w=1200'
+].map((image,index)=>(
+  <img
+    key={index}
+    src={image}
+    style={{
+      width:'100%',
+      height:'350px',
+      objectFit:'cover',
+      borderRadius:'20px'
+    }}
+  />
+))}
+```
+
+  </div>
+</section>
+
 
         <div style={{
           display:'grid',
